@@ -1,0 +1,13 @@
+/*.py
+*.ipynb
+*.conf
+*.env
+/*.txt
+.ipynb_checkpoints/
+config/
+Include/
+logs/
+Old/
+plugins/
+Scripts/
+.Rhistory
