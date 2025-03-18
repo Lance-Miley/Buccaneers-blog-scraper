@@ -6,9 +6,9 @@ The code scraps and cleans a day's worth of articles (on a two day lag to allow 
 ### Code Structure
 The dags folder has the core .py scripts that are used in the process
 - joebucs_pipeline.py is the script that airflow calls. It contains and summarizes the various functions into tasks for the DAG.
-- data_scraper.py has the functions used to scrap the website, call the OpenAI API, clean the data and save out the daily .csv and .json files. The files are saved here in the Ouput/Extracts folder.
+- data_scraper.py has the functions used to scrape the website, call the OpenAI API, clean the data and save out the daily .csv and .json files. The files are saved here in the Ouput/Extracts folder.
 - S3_upload.py takes the daily files and loads them into S3
 - snowflake_load.py takes the daily .csv files and inserts them into tables on the Snowflake Data Warehouse
 - snowflake_table_read.py reads from the Snowflake Data Warehouse tables and saves the information into two .xlsx files in the Snowflake_data/ folder. 
 
-The comments_analysis.R file pulls from the files in the Snowflake_data/ folder and creates the daily summar thy graphs that can be seen in the Analysis/ folder. 
+The comments_analysis.R file pulls from the files in the Snowflake_data/ folder and creates the daily summary graphs that can be seen in the Analysis/ folder. 
