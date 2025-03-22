@@ -64,10 +64,10 @@ x-airflow-common:
     AIRFLOW__SMTP__SMTP_HOST: 'smtp.mail.yahoo.com'
     AIRFLOW__SMTP__SMTP_STARTTLS: 'true'
     AIRFLOW__SMTP__SMTP_SSL: 'false'
-    AIRFLOW__SMTP__SMTP_USER: lawrence.miley@yahoo.com
-    AIRFLOW__SMTP__SMTP_PASSWORD: klxlkhcymqzltcll
+    AIRFLOW__SMTP__SMTP_USER: your_email
+    AIRFLOW__SMTP__SMTP_PASSWORD: your_password
     AIRFLOW__SMTP__SMTP_PORT: 587
-    AIRFLOW__SMTP__SMTP_MAIL_FROM: lawrence.miley@yahoo.com
+    AIRFLOW__SMTP__SMTP_MAIL_FROM: your_email
 
     AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session'
     # yamllint disable rule:line-length
